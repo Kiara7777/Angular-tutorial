@@ -10,6 +10,7 @@ import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.comp
 import { RecipeItemComponent } from './recipe/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { sharedModule } from './shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { sharedModule } from './shared/shared.module';
     RecipeItemComponent,
     ShoppingEditComponent,
   ],
-  imports: [BrowserModule, sharedModule],
+  imports: [BrowserModule, sharedModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
