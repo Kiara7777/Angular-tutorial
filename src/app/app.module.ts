@@ -20,13 +20,10 @@ import { sharedModule } from './shared/shared.module';
     RecipeListComponent,
     RecipeDetailComponent,
     RecipeItemComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
   ],
-  imports: [
-    BrowserModule,
-    sharedModule
-  ],
+  imports: [BrowserModule, sharedModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
