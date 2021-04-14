@@ -1,11 +1,8 @@
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
+import { DropdownDirective } from './dropdown.directive';
 
 @NgModule({
-    imports: [
-    ],
-    exports: [
-    ]
+  imports: [],
+  exports: [],
 })
-export class sharedModule{
-
-}
+export class SharedModule {}
