@@ -9,6 +9,7 @@ export class DropdownDirective {
 
   @HostListener('document:click', ['$event']) clicked(eventData: Event) {
     if (this.elemRef.nativeElement.contains(eventData.target)) {
+      if (open) this.render.removeClass(this.elemRef.nativeElement, 'open');
       this.render.addClass(this.elemRef.nativeElement, 'open');
     } else {
       this.render.removeClass(this.elemRef.nativeElement, 'open');

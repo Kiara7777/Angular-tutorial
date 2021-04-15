@@ -6,7 +6,7 @@
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <app-recipe-item *ngFor="let recipe of recipes" [rec]="recipe" (displayDetail)="passDisplayDetail($event)">
+    <app-recipe-item *ngFor="let recipe of recipes" [rec]="recipe">
     </app-recipe-item>
   </div>
 </div>
